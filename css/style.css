@@ -54,10 +54,38 @@ a:hover {
     cursor: pointer;
 }
 
+h2{
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+section > p{
+    margin-bottom: 14px;
+}
+
 p{
     color: var(--color-lightgrey);
 }
 
+/*-----scrollbar-----*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-highlight);
+}
 /*---------- PAGE ----------*/
 
 /*----- WRAPPER -----*/
@@ -151,11 +179,13 @@ p{
 }
 
 #download{
+    color: gray;
     height: 40px;
     border-bottom: 2px solid var(--color-darkgrey);
 }
 
 #profile{
+    color: #ffffff;
     height: 60px;
 }
 
@@ -256,7 +286,7 @@ section h2{
 
 .card-text {
 text-align: center;
-padding: 8px;
+padding: 12px;
 }
 
 .card-text p{
@@ -323,6 +353,10 @@ footer{
     padding-right: 2px;
 }
 
+#footer-left i:hover{
+    transform: scale(1.2);
+}
+
 #footer-center{
     width: 40%;
     height: 100%;
@@ -338,12 +372,23 @@ footer{
 #playbar-icon ul{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    transform: translateY(8px);
+    gap: 25px;
+}
+
+#playbar-icon li{
+    display: flex;
+    align-items: center;
 }
 
 #playbar-icon ul li:hover{
     transform: scale(1.2);
 }
+
+#playbar-icon li:nth-of-type(3){
+    font-size: 28px;
+}
+
 
 #playbar-time{
     height: 40%;
